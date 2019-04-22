@@ -1,0 +1,373 @@
+/* Header has white text on dark green background and
+   is centered */
+h1 { padding: 20px; 
+    background-color: #333; 
+	text-align: center; 
+	color: white; 
+	font-size: 260%;
+	font-family: font-family: 'Patua One', Times;
+	}
+
+/* Centering the page. */
+body { margin-left: auto;
+      margin-right: auto;
+	  width: 90%; 
+	  background-color: #eaeaea; }
+
+/* Centering and coloring the navigation menu. */
+nav { background-color: #303030; 
+     text-align: left;}
+
+/* Getting rid of the underlines on the nav hyperlinks. */
+nav  a{ text-decoration: none; 
+       padding: 10px; }	  
+
+/* Getting rid of the bullet points on the nav list items. */
+nav ul { list-style-type: none;
+        margin: 0;
+		padding: 0; }
+
+/* Making the nav display horizontally and styling font size/padding. */
+nav li {
+      font-size: 120%;
+	  padding-top: 10px; 
+	  padding-bottom: 9px; 
+	  color: black; }
+
+/* Making sure that the hyperlinks stay black unless the cursor hovers over them. 
+   Then the whole hyperlink area turns dark green and text turns white. */
+
+nav a:link { color: white;}
+nav a:visited { color: blue; }
+
+nav a:hover { transition: background-color .25s linear;
+			 background-color: #eaeaea;
+			 color: white; }
+
+nav a:focus { color: gray;}
+
+nav a:active { color: gray;}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  z-index: 10;
+  background: #eeeeee;
+  -webkit-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+}
+
+.containers {
+  text-align: center;
+  padding: 15px 20px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width:  25%; /* Full width */
+  height: 25%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+.containercenter {
+  margin: 100px auto;
+  width: 975px;
+  padding: 30px;
+}
+  .containerleft {
+  margin: 100px auto;
+  width: 975px;
+  padding: 30px;
+  }
+  .containerright {
+  margin: 100px auto;
+  width: 975px;
+  padding: 30px;
+  }
+
+/* To establish a border around both 2 column layout containers. */	  
+#containers { border: 0px solid; 
+              padding-bottom: 500px; } /* Was padding 200 */
+
+/* Keeps left column layout on the left. */			  
+#containerleft { border: 0px solid;
+                 margin-right: 0px;
+				 float: left;
+				 padding: 0px 0px 0px 0px;
+				 font-size: 120%; 
+				 clear: both;}
+				 
+/* Moves right column layout to the right. */				
+#containerright { border: 1px solid;
+                  width: 200px; 
+				  float: right; 
+				  padding: 20px;
+				  font-size: 100%; }
+
+#containercenter { border: 1px solid red;
+                  margin-left: 100px;
+				  margin-right: 241px;
+				  padding-top: 0px;
+				  padding-bottom: 500px;}
+
+.firstRow { padding: 50px; 
+			background-color: #668cff; }
+			
+#firstRowLinks { border: 1px solid green; 
+				 padding-bottom: 50px;
+				 padding-top: 0px;}
+				 
+.secondRow { padding: 50px; 
+			background-color: #668cff;}
+			
+#secondRowLinks { border: 1px solid orange; 
+				 padding-bottom: 50px;
+				 padding-top: 0px;}
+				 
+.thirdRow { padding: 50px; 
+			background-color: #668cff; }
+			
+#thirdRowLinks { border: 1px solid green; 
+				 padding-bottom: 50px;
+				 padding-top: 0px;}
+				 
+.fourthRow { padding: 50px; 
+			background-color: #668cff;}
+			
+#fourthRowLinks { border: 1px solid orange; 
+				 padding-bottom: 50px;
+				 padding-top: 0px;}
+
+
+/* Clears the float so the footer can be displayed. Designates how far down
+   from the content the footer is shown. */	  
+footer { float: clear; 
+       padding-top: 30px; }
+
+/* Search bar CSS */
+#search {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+  background-color: white;
+  background-image: url("../Photos/search_16x16.png");
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  display: block;
+}
+
+
+
+/* Make search button animated upon mouse click inside 
+input[type=text]:focus {
+  width: 100%;
+  } */
+/* Login Button CSS	 */  
+.button{
+background-color: #333;
+  border: none;
+  color: white;
+  padding: 25px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float: right;
+}
+	  
+	  /* Login form CSS*/
+.modal {
+  display: inline; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0; 
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
