@@ -6,10 +6,10 @@
 		<meta charset="utf-8"
 		
 		<!-- favicon for webpage 
-		name="viewport" content="width=device-width, initial-scale=1" -->
-		<link href = "../Style/style.css" rel = "stylesheet" type = "text/css">
+		name="viewport" content="width=device-width, initial-scale=1">
+		<link href = "../CSS/style.css" rel = "stylesheet" type = "text/css">
 		<title> Home - ShoutHaus </title>
-		<link rel="shortcut icon" type="image/png" href="../Photos/favicon.png"/
+		<link rel="shortcut icon" type="image/png" href="../Photos/favicon.png"/-->
 		</head>
 		
 	<body>
@@ -25,6 +25,8 @@
 				<h2>Welcome</h2>
 				
 				<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+                <button onclick="document.getElementById('id02').style.display='block'"
+                style="width:auto;">Signup</button>
 			
 		</header>
 		
@@ -54,6 +56,36 @@
       <button type="submit" onclick="document.getElementById('id01').style.display='none'";"Function()"; class="cancelbtn">Cancel</button>
 	
       <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+    
+    <div id="id02" class="modal">
+  <form class="modal-content animate" action="example.com" target="espn.com">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="../Photos/avatar.png" alt="avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        <div class="clearfix" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
     </div>
   </form>
 </div>
