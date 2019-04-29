@@ -16,8 +16,8 @@
 		<div class="header" 
 		<header>
 			<h1>shoutHaus</h1>
-			<audio controls>
-				<source src="test.mp3" type="audio/mpeg">
+			<audio controls id="audioPlayer">
+				<source src=""  type="audio/ogg">
 			</audio>
 		<div>
 		</body>
@@ -181,7 +181,7 @@ window.onclick = function(event) {
 					
 					<div id="firstRowLinks">
 						<h2>Recommended</h2> <br><br>
-						<a href="#" onclick="play('r1s1')" class="firstRow">Sound 1</a>
+						<a href="#" onclick="play('Chicken.ogg')" class="firstRow">Chicken</a>
 						<a href="#" onclick="play('r1s2')" class="firstRow">Sound 2</a>
 						<a href="#" onclick="play('r1s3')" class="firstRow">Sound 3</a>
 						<a href="#" onclick="play('r1s4')" class="firstRow">Sound 4</a>
@@ -233,8 +233,15 @@ window.onclick = function(event) {
 	<!--Script at the end of page so that everything else loads first. -->
 	<script>
 	
-		function play(input) {
-			alert(input);
+		function play(fileName) {
+			//alert(fileName);
+			var audio = document.getElementById('audioPlayer');
+			//alert(typeof(audio))
+			audio.src = "../Sound/" + fileName;
+			//alert(audio.src);
+			audio.load();
+			audio.play();
+			
 		}
   
 			
