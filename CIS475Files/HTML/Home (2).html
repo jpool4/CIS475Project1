@@ -36,12 +36,15 @@
 				<h2>Welcome</h2>
 				
 				<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-                <button onclick="document.getElementById('id02').style.display='block'"
-                style="width:auto;">Signup</button>
+			<!-- Signup button -->
+                <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Signup</button>
+                
 			
 		</header>
-		
+		<!-- Hides Login modal -->
 		<div id="id01" class="modal" style="display:none">
+		
+		
 		
   
   <form class="modal-content animate" action="example.com" target="espn.com"> 
@@ -70,8 +73,8 @@
     </div>
   </form>
 </div>
-    
-    <div id="id02" class="modal">
+    <!-- Hides Signup modal -->
+    <div id="id02" class="modal" style="display:none">
   <form class="modal-content animate" action="example.com" target="espn.com">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -131,6 +134,7 @@ return false;
 
 // Get the modal
 var modal = document.getElementById('id01');
+var modal = document.getElementById('id02');
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
