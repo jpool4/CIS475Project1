@@ -60,6 +60,8 @@ nav a:active { color: gray;}
   -moz-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
   box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
 }
+/* Makes the audio player span the length of the page while being centered under header */
+audio { width: 2240px; display: block; margin:20px; }
 
 .containers {
   text-align: center;
