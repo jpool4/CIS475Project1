@@ -24,9 +24,12 @@
 		<div class="header" 
 		<header>
 			<h1>shoutHaus</h1>
+			<a id="songText">test</a>
 			<audio controls id="audioPlayer">
 				<source src=""  type="audio/ogg">
 			</audio>
+			
+			
 		<div>
 		</body>
 		</html>
@@ -249,8 +252,10 @@ window.onclick = function(event) {
 		function play(fileName) {
 			//alert(fileName);
 			var audio = document.getElementById('audioPlayer');
+			var songTitleDisplay = document.getElementById('songText');
 			//alert(typeof(audio))
 			audio.src = "../Sound/" + fileName;
+			songTitleDisplay.innerHTML = fileName;
 			//alert(audio.src);
 			audio.load();
 			audio.play();

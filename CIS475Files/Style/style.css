@@ -61,9 +61,14 @@ nav a:active { color: gray;}
   box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
 }
 /* Makes the audio player span the length of the page while being centered under header */
-audio { width: 800px; display: block; margin:auto; text-align:center; 
-		
-		}
+audio { width: 800px; display: block; margin:auto; text-align:center; }
+
+/*Centers the text above the song name. */
+#songText {margin: auto; 
+           display: block;  
+           text-align: center; 
+		   margin-bottom: 10px; 
+		   font-size: 25px; }
 
 .containers {
   text-align: center;
