@@ -67,7 +67,8 @@ audio { width: 800px; display: block; margin:auto; text-align:center; }
 #songText {margin: auto; 
            display: block;  
            text-align: center; 
-		   margin-bottom: 10px; }
+		   margin-bottom: 10px; 
+		   font-size: 25px; }
 
 .containers {
   text-align: center;
