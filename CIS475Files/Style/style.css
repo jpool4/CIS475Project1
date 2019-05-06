@@ -70,6 +70,12 @@ audio { width: 800px; display: block; margin:auto; text-align:center; }
 		   margin-bottom: 10px; 
 		   font-size: 25px; }
 
+/*All the basic player buttons */		   
+#playButton { width: 60px;
+                  border-radius: 7px; }
+				  
+#songPosition { }
+
 .containers {
   text-align: center;
   padding: 15px 20px;
