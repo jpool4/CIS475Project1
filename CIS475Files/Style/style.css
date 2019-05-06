@@ -72,17 +72,23 @@ audio { width: 800px; display: block; margin:auto; text-align:center; }
 
 /*All the basic player buttons */		   
 #playButton { width: 60px;
-                  border-radius: 7px; }
+                  border-radius: 7px; 
+				  vertical-align: middle; }
 #pauseButton { width: 60px;
                   border-radius: 7px; 
 				  padding: 10px; 
-				  height: 45px; }
+				  height: 45px; 
+				  vertical-align: middle;}
+
+
+/* Much of the following code is influenced by https://www.youtube.com/watch?v=L5rnkFNSnE8 */	  
+/* These things are used to style the playback slider */
 				  
 #songPosition { -webkit-appearance: none; 
                background: #A80000 ;
-			   
+			   vertical-align: middle;
                height: 45px;	
-               width: 300px;			   
+               width: 500px;			   
                }
 #songPosition::-webkit-slider-thumb { -webkit-appearance: none; 
                                       appearance: none;
@@ -96,6 +102,23 @@ audio { width: 800px; display: block; margin:auto; text-align:center; }
 	   border: none;
  	          
 }
+
+/* These things are used to style the volume slider */
+
+#songVolume { -webkit-appearance: none; 
+               background: #A80000 ;
+			   vertical-align: middle;
+               height: 20px;	
+               width: 200px;			   
+               }
+#songVolume::-moz-range-thumb { 
+       width: 20px; 
+	   height: 40px;
+	   background: #333;
+	   border: none;
+ 	          
+}
+
 
 
 .containers {
