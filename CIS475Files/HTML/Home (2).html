@@ -78,23 +78,23 @@
 </div>
     <!-- Hides Signup modal -->
     <div id="id02" class="modal" style="display:none">
-	
-  <form class="modal-content animate" action="../PHP/Login.php" method="post">
+	<!-- Signup form -->
+  <form name="signupform" class="modal-content animate" action="./Home (2).html" onsubmit="return SignupValidate()" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="../Photos/avatar.png" alt="avatar" class="avatar">
     </div>
-
+	
     <div class="container">
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter your email address" name="email" required>
+      <label for="email"><b>Username</b></label>
+      <input type="text" placeholder="Enter your desired username" name="username" required>
 
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter a password" name="psw"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+      <input type="password" placeholder="Enter a password" name="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
 		title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
 
       <label for="psw-repeat"><b>Confirm Password</b></label>
-      <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+      <input type="password" placeholder="Confirm Password" name="password" required>
       
       <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
@@ -103,7 +103,7 @@
       <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
         <div class="container" style="background-color:#f1f1f1">
         <button type="submit" class="signupbtn">Sign Up</button>
-        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
       </div>
     </div>
   </form>
@@ -114,30 +114,43 @@
 function validate() {
         var un = document.loginform.uname.value;
         var pw = document.loginform.psw.value;
-        var username = "towson"; 
-        var password = "tigers";
+        var username = "Towson"; 
+        var password = "Tigers2019";
         if ((un == username) && (pw == password)) {
             return true;
         }
         else {
             alert ("Login unsuccessful. Please try again. If you forgot your password, click forgot password");
             return false;
-}
-}
+		}
+	}
+function SignupValidate() {
+        var user = document.signupform.username.value;
+        var pass = document.signupform.password.value;
+        var username1 = "Towson"; 
+        var password1 = "Tigers2019";
+        if ((user == username1) && (pass == password1)) {
+            return true;
+        }
+        else {
+            alert ("Sorry, this account is already in use. Hint: School name");
+            return false;
+		}
+	}
 	
 
 
 
-// Get the modal
-var modal = document.getElementById('id01');
-var modal = document.getElementById('id02');
+		// Get the modal
+		var modal = document.getElementById('id01');
+		var modal = document.getElementById('id02');
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+		}
+	}
 </script>
 		<main>
 			
