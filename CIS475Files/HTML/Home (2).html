@@ -50,7 +50,7 @@
 		
 		
   <!-- Login form -->
-  <form name ="loginform"class="modal-content animate" action="../PHP/Login.php" onsubmit="return validate()" method="post"> 
+  <form name ="loginform"class="modal-content animate" action="../PHP/Login.php" onsubmit="return validate();" method="post"> 
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="../Photos/avatar.png" alt="avatar" class="avatar">
@@ -79,22 +79,22 @@
     <!-- Hides Signup modal -->
     <div id="id02" class="modal" style="display:none">
 	<!-- Signup form -->
-  <form name="signupform" class="modal-content animate" action="./Home (2).html" onsubmit="return SignupValidate()" method="post">
+  <form name="signupform" class="modal-content animate" action="./Home (2).html" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="../Photos/avatar.png" alt="avatar" class="avatar">
     </div>
 	
     <div class="container">
-      <label for="email"><b>Username</b></label>
-      <input type="text" placeholder="Enter your desired username" name="username" required>
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter your desired username" name="uname1" required>
 
-      <label for="psw"><b>Password</b></label>
+      <label for="password"><b>Password</b></label>
       <input type="password" placeholder="Enter a password" name="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
 		title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
 
-      <label for="psw-repeat"><b>Confirm Password</b></label>
-      <input type="password" placeholder="Confirm Password" name="passwordrepeat" required>
+      <label for="psw2"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Confirm Password" name="password-repeat" required>
       
       <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
@@ -124,22 +124,8 @@ function validate() {
             return false;
 		}
 	}
-<!-- Signupform Validation -->
-function SignupValidate() {
-        var user = document.signupform.username.value;
-        var pass = document.signupform.password.value;
-		var passrepeat = document.signupform.passwordrepeat.value;
-        var username1 = "Towson"; 
-        var password1 = "Tigers2019";
-		var password1repeat ="Tigers2019"
-        if ((user == username1) && (pass == password1) pass == password1) passrepeat == password1repeat)) {
-            return true;
-        } 
-        else {
-            alert ("Sorry, this account is already in use. Hint: School name");
-            return false;
-		}
-	}
+
+  
 	
 
 
