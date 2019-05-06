@@ -49,13 +49,13 @@
 		
 		
 		
-  
-  <form class="modal-content animate" action="../PHP/Login.php" method="post"> 
+  <!-- Login form -->
+  <form name ="loginform"class="modal-content animate" action="../PHP/Login.php" onsubmit="return validate()" method="post"> 
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="../Photos/avatar.png" alt="avatar" class="avatar">
     </div>
-
+	
     <div class="container">
       <label for="uname"><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" required>
@@ -78,6 +78,7 @@
 </div>
     <!-- Hides Signup modal -->
     <div id="id02" class="modal" style="display:none">
+	
   <form class="modal-content animate" action="../PHP/Login.php" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -110,26 +111,17 @@
 
  <!-- checks username and password -->
 <script>
-var attempt = 3; // Variable to count number of attempts.
-// Below function Executes on click of login button.
-function validate(){
-var username = document.getElementById("uname").value;
-var password = document.getElementById("psw").value;
-if ( uname == "towson=" && psw == "tigers"){
-alert ("Login successfull");
-window.location = "success.txt"; // Redirecting to other page.
-return false;
-}
-else{
-attempt --;// Decrementing by one.
-alert("You have left "+attempt+" attempt;");
-// Disabling fields after 3 attempts.
-if( attempt == 0){
-document.getElementById("uname").disabled = true;
-document.getElementById("psw").disabled = true;
-document.getElementById("submit").disabled = true;
-return false;
-}
+function validate() {
+        var un = document.loginform.uname.value;
+        var pw = document.loginform.psw.value;
+        var username = "towson"; 
+        var password = "tigers";
+        if ((un == username) && (pw == password)) {
+            return true;
+        }
+        else {
+            alert ("Login unsuccessful. Please try again. If you forgot your password, click forgot password");
+            return false;
 }
 }
 	
