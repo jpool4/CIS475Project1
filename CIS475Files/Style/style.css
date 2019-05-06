@@ -1,6 +1,7 @@
 /* Header has white text on grey background and
    is centered */
 h1 { padding: 20px; 
+    margin: 0px;
     background-color: #333; 
 	text-align: center; 
 	color: white; 
@@ -48,21 +49,12 @@ nav a:focus { color: gray;}
 
 nav a:active { color: gray;}
 
- .header {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 48px;
-  z-index: 10;
-  background: #eeeeee;
-   -webkit-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12); WHAT IS THIS?
-  -moz-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
-  box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12); 
-}
+#loginsignup { text-align: right; }
+
 #username { text-align: right; 
             font-size: 20px; 
-			margin-top: 0px; }
+			margin: 2px; 
+			font-style: bold;}
 
 /* Makes the audio player span the length of the page while being centered under header */
 audio { width: 800px; display: block; margin:auto; text-align:center; }
@@ -75,7 +67,6 @@ audio { width: 800px; display: block; margin:auto; text-align:center; }
 		   font-size: 25px; }
 
 #player1 { border: black solid 3px; 
-           width: 46%;
 		   padding-left: 20px; }
 		   
 		   
