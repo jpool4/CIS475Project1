@@ -94,7 +94,7 @@
 		title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
 
       <label for="psw-repeat"><b>Confirm Password</b></label>
-      <input type="password" placeholder="Confirm Password" name="password" required>
+      <input type="password" placeholder="Confirm Password" name="passwordrepeat" required>
       
       <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
@@ -124,14 +124,17 @@ function validate() {
             return false;
 		}
 	}
+<!-- Signupform Validation -->
 function SignupValidate() {
         var user = document.signupform.username.value;
         var pass = document.signupform.password.value;
+		var passrepeat = document.signupform.passwordrepeat.value;
         var username1 = "Towson"; 
         var password1 = "Tigers2019";
-        if ((user == username1) && (pass == password1)) {
+		var password1repeat ="Tigers2019"
+        if ((user == username1) && (pass == password1) pass == password1) passrepeat == password1repeat)) {
             return true;
-        }
+        } 
         else {
             alert ("Sorry, this account is already in use. Hint: School name");
             return false;
