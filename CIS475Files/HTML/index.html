@@ -254,6 +254,25 @@
                 }
             }
         </script>
+		
+			<!--Script at the end of page so that everything else loads first. -->
+		<script>
+		
+			function play(fileName) {
+				//alert(fileName);
+				var audio = document.getElementById('audioPlayer');
+				var songTitleDisplay = document.getElementById('songText');
+				//alert(typeof(audio))
+				audio.src = "../Sound/" + fileName;
+				songTitleDisplay.innerHTML = fileName;
+				//alert(audio.src);
+				audio.load();
+				audio.play();
+				
+			}
+	  
+				
+		</script>
 </body>
 
 </html>
