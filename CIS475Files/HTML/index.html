@@ -2,9 +2,10 @@
 <html>
 
 <head>
+	<title>shoutHaus</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../Style/styles.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
 </head>
 
 <body>
@@ -31,27 +32,27 @@
   <button onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
   <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
 </div>
-			<source src="Sound/Chicken.ogg" type="audio/ogg">
+			<source src="Chicken.ogg" type="audio/ogg">
 			Unsupported Browser!
 			
 		  </audio>
             <div id="contentCenter">
 
                 <div class="rowTitle">
-                    <h1>Recommended</h1>
+                    <h1>Popular</h1>
                 </div>
                 <div class="gallery">
-                    <div class="thumbnail"> <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards"/></a>
+                    <div class="thumbnail"> <a href="#"><img src="bkg_06.jpg" alt="" width="2000" class="cards"/></a>
                         <a href="#" onclick="play('Chicken.ogg')" class="tag"><h4>Chicken Cast</h4></a>
                         <p class="tag">Test&nbsp;</p>
                         <p class="text_column">Description</p>
                     </div>
-                    <div class="thumbnail"> <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards"/></a>
+                    <div class="thumbnail"> <a href="#"><img src="bkg_06.jpg" alt="" width="2000" class="cards"/></a>
                         <h4>TITLE</h4>
                         <p class="tag">Genre</p>
                         <p class="text_column">Description</p>
                     </div>
-                    <div class="thumbnail"> <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards"/></a>
+                    <div class="thumbnail"> <a href="#"><img src="bkg_06.jpg" alt="" width="2000" class="cards"/></a>
                         <h4>TITLE</h4>
                         <p class="tag">Decription</p>
                         <p class="text_column">Genre</p>
@@ -61,17 +62,17 @@
                     <h1>Recent</h1>
                 </div>
                 <div class="gallery">
-                    <div class="thumbnail"> <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards"/></a>
-                        <a href="#" onclick="play('r3s1')" class="tag"><h4>Sound 1</h4></a>
+                    <div class="thumbnail"> <a href="#"><img src="bkg_06.jpg" alt="" width="2000" class="cards"/></a>
+                        <a href="#" onclick="play('BluesInfusion.ogg')" class="tag"><h4>Sound 1</h4></a>
                         <p class="tag">Gaming</p>
                         <p class="text_column">Description</p>
                     </div>
-                    <div class="thumbnail"> <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards"/></a>
+                    <div class="thumbnail"> <a href="#"><img src="bkg_06.jpg" alt="" width="2000" class="cards"/></a>
                         <h4>TITLE</h4>
                         <p class="tag">Genre</p>
                         <p class="text_column">Description</p>
                     </div>
-                    <div class="thumbnail"> <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards"/></a>
+                    <div class="thumbnail"> <a href="#"><img src="bkg_06.jpg" alt="" width="2000" class="cards"/></a>
                         <h4>TITLE</h4>
                         <p class="tag">Genre</p>
                         <p class="text_column">Description</p>
@@ -81,17 +82,17 @@
                     <h1>Trending</h1>
                 </div>
                 <div class="gallery">
-                    <div class="thumbnail"> <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards"/></a>
+                    <div class="thumbnail"> <a href="#"><img src="/bkg_06.jpg" alt="" width="2000" class="cards"/></a>
                         <h4>Chicken Cast</h4>
                         <p class="tag">Chicken Cast</p>
                         <p class="text_column">Description</p>
                     </div>
-                    <div class="thumbnail"> <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards"/></a>
+                    <div class="thumbnail"> <a href="#"><img src="bkg_06.jpg" alt="" width="2000" class="cards"/></a>
                         <h4>TITLE</h4>
                         <p class="tag">Genre</p>
                         <p class="text_column">Description</p>
                     </div>
-                    <div class="thumbnail"> <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards"/></a>
+                    <div class="thumbnail"> <a href="#"><img src="bkg_06.jpg" alt="" width="2000" class="cards"/></a>
                         <h4>TITLE</h4>
                         <p class="tag">Genre</p>
                         <p class="text_column">Description</p>
@@ -139,6 +140,9 @@
                 <div class="login">
 				 <h2>Welcome Guest</h2>
 				</div>
+				
+				
+				<div class="addthis_tipjar_inline"></div>   
                 <div class="login">
 					
                     <!-- Login Button-->
@@ -153,22 +157,29 @@
             <div id="containerright">
 
                 <p>This is a test for the ad container</p>
-                <img src="/Photos/marketingplan.jpg" width="205" height="146">
+                <img src="marketingplan.jpg" width="205" height="146">
                 <br><br>
-                <img src="/Photos/marketingplan.jpg" width="205" height="146">
+                <img src="marketingplan.jpg" width="205" height="146">
 
             </div>
         </div>
-        <footer class="main-footer">Copyright © 2019 ShoutHaus </footer>
+		
+		
+		
+		<footer class="main-footer">Copyright © 2019 ShoutHaus
+
+			
+
+		</footer>
         </div>
         <!-- Main Container Ends -->
 
         <!-- Login Form -->
         <div id="id01" class="modal" style="display:none">
-            <form name="loginform" class="modal-content animate" action="../PHP/Login.php" onsubmit="return validate();" method="post">
+            <form name="loginform" class="modal-content animate" action="Login.php" onsubmit="return validate();" method="post">
                 <div class="imgcontainer">
                     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                    <img src="../Photos/avatar.png" alt="avatar" class="avatar">
+                    <img src="avatar.png" alt="avatar" class="avatar">
                 </div>
 
                 <div class="container">
@@ -194,22 +205,21 @@
         <!-- Hides Signup modal -->
         <div id="id02" class="modal" style="display:none">
             <!-- Signup form -->
-            <form name="signupform" class="modal-content animate" action="./Home (2).html" method="post">
+            <form name="signupform" class="modal-content animate" action="./Home (2).html" onsubmit="return validate2();" method="post">
                 <div class="imgcontainer">
                     <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-                    <img src="../Photos/avatar.png" alt="avatar" class="avatar">
+                    <img src="avatar.png" alt="avatar" class="avatar">
                 </div>
 
                 <div class="container">
-                    <label for="username"><b>Username</b></label>
+                    <label for="uname1"><b>Username</b></label>
                     <input type="text" placeholder="Enter your desired username" name="uname1" required>
 
-                    <label for="password"><b>Password</b></label>
-                    <input type="password" placeholder="Enter a password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                    <label for="psw1"><b>Password</b></label>
+                    <input type="password" placeholder="Enter a password" name="psw1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
 
                     <label for="psw2"><b>Confirm Password</b></label>
-                    <input type="password" placeholder="Confirm Password" name="password-repeat" required>
-
+                    <input type="password" placeholder="Confirm Password" name="psw2" required>
                     <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
       </label>
@@ -228,6 +238,9 @@
             function validate() {
                 var un = document.loginform.uname.value;
                 var pw = document.loginform.psw.value;
+				<!-- var un1 = document.signupform.uname1.value; -->
+				<!--var pw1 = document.signupform.psw1.value; -->
+				<!-- var pw2= document.signupform.psw2.value; -->
                 var username = "Towson";
                 var password = "Tigers2019";
                 if ((un == username) && (pw == password)) {
@@ -237,6 +250,22 @@
                     return false;
                 }
             }
+			
+			function validate2() {
+				var un1 = document.signupform.uname1.value;
+				var pw1 = document.signupform.psw1.value;
+				var pw2= document.signupform.psw2.value;
+				var username = "Towson";
+                var password = "Tigers2019";
+				
+				if ((un1 == username) && (pw1 == password) && (pw2 == password)) {
+                    return true;
+                } else {
+                    alert("Signup unsuccessful. This account already exists. Please try again.");
+                    return false;
+			}
+		}
+ 
 
 
 
@@ -247,12 +276,12 @@
             var modal = document.getElementById('id01');
             var modal = document.getElementById('id02');
 
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
+            <!-- When the user clicks anywhere outside of the modal, close it -->
+            // window.onclick = function(event) { 
+              //  if (event.target == modal) {
+               //     modal.style.display = "none";
+              //  }
+          //   } 
         </script>
 		
 			<!--Script at the end of page so that everything else loads first. -->
@@ -263,7 +292,7 @@
 				var audio = document.getElementById('audioPlayer');
 				var songTitleDisplay = document.getElementById('songText');
 				//alert(typeof(audio))
-				audio.src = "../Sound/" + fileName;
+				audio.src = "" + fileName;
 				songTitleDisplay.innerHTML = fileName;
 				//alert(audio.src);
 				audio.load();
@@ -273,6 +302,7 @@
 	  
 				
 		</script>
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cd09eba2c50f938"></script>	-->
 </body>
 
 </html>
