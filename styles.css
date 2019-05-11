@@ -1,0 +1,519 @@
+.wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+    font: 1.2em Helvetica, arial, sans-serif;
+
+
+}
+
+.wrapper > * {
+    background-color: #eeeeee;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-head {
+    grid-area: header;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #717070;
+    color: #FFFFFF;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.content {
+    grid-area: content;
+}
+
+.main-nav {
+    grid-area: nav;
+
+}
+
+.side {
+    grid-area: sidebar;
+	display: flex;
+    align-items: baseline;
+    justify-content: center;
+	background: white;
+}
+
+.sideDetail{
+	width: 150%;
+	background: #eeeeee;
+	padding: 10px;
+}
+
+.ad {
+    grid-area: ad;
+}
+
+.main-footer {
+    grid-area: footer;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #717070;
+    color: #FFFFFF;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    border-top-width: 2px;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: "header" "nav" "content" "sidebar" "ad" "footer";
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+audio {
+    width: 800px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+/*Centers the text above the song name. */
+
+#songText {
+    /* margin: auto; */
+    display: block;
+    /* text-align: center; */
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.podPlayer {
+    padding-left: 20px;
+    border-style: solid;
+    border-bottom: thin 10px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+
+/*All the basic player buttons */
+
+#playButton {
+    width: 60px;
+    border-radius: 7px;
+    vertical-align: middle;
+}
+
+#pauseButton {
+    width: 60px;
+    border-radius: 7px;
+    vertical-align: middle;
+}
+
+
+/* Much of the following code is influenced by https://www.youtube.com/watch?v=L5rnkFNSnE8 */
+
+/* These things are used to style the playback slider */
+
+#songPosition {
+    -webkit-appearance: none;
+    background: #A80000;
+    border: solid black 2px;
+    vertical-align: middle;
+    height: 20px;
+    width: 500px;
+}
+
+#songPosition::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    /* This can be used for chrome, opera, safari, edge browsers */
+}
+
+#songPosition::-moz-range-thumb {
+    width: 30px;
+    height: 20px;
+    background: #333;
+    border: none;
+
+}
+
+/* These things are used to style the volume slider */
+
+#songVolume {
+    -webkit-appearance: none;
+    background: #800000;
+    vertical-align: middle;
+    height: 10px;
+    width: 120px;
+}
+
+#songVolume::-moz-range-thumb {
+    width: 15px;
+    height: 20px;
+    background: #333;
+    border: none;
+
+}
+
+/* Getting rid of the underlines on the nav hyperlinks. */
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Getting rid of the bullet points on the nav list items. */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Making the nav display horizontally and styling font size/padding. */
+
+nav li {
+    font-size: 120%;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    color: black;
+}
+
+/* Making sure that the hyperlinks stay black unless the cursor hovers over them. 
+   Then the whole hyperlink area turns dark green and text turns white. */
+
+nav a:link {
+    color: black;
+}
+
+nav a:visited {
+    color: grey;
+}
+
+nav li:hover {
+    transition: background-color .25s linear;
+    background-color: #eaeaea;
+    width: 100%;
+}
+
+nav a:focus {
+    color: gray;
+}
+
+nav a:active {
+    color: gray;
+}
+
+.contentRow {
+    display: flex;
+
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentRowItem {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+
+
+}
+
+.secondRow {
+    display: flex;
+    padding: 50px;
+    background-color: #668cff;
+}
+
+#secondRowLinks {
+    border: 1px solid orange;
+    padding-bottom: 50px;
+    padding-top: 0px;
+}
+
+.thirdRow {
+    padding: 50px;
+    background-color: #668cff;
+}
+
+#thirdRowLinks {
+    border: 1px solid green;
+    padding-bottom: 50px;
+    padding-top: 0px;
+}
+
+.fourthRow {
+    padding: 50px;
+    background-color: #668cff;
+}
+
+#fourthRowLinks {
+    border: 1px solid orange;
+    padding-bottom: 50px;
+    padding-top: 0px;
+}
+
+@media (min-width: 500px) {
+    .wrapper {
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "header  header" "nav     nav" "sidebar content" "ad      footer";
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 700px) {
+    .wrapper {
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: "header header  header" "nav    content sidebar" "nav    content ad" "footer footer  footer";
+    }
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+.gallery {
+    clear: both;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 0px;
+
+    width
+}
+
+.thumbnail {
+    width: 40%;
+    \ text-align: center;
+    background-color: #F8F8F8;
+    padding-bottom: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 3px;
+    border-bottom: 4px solid #6DC7D0;
+}
+
+.gallery .thumbnail h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #52BAD5;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.gallery .thumbnail p {
+    margin: 0;
+    color: #B3B3B3;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.cards {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 200px;
+    opacity: 0.8;
+}
+
+.gallery .thumbnail .tag{
+    color: #5D5E5D;
+    text-align: left;
+}
+
+.searchBar{
+
+}
+#search {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+  background-color: white;
+  background-image: url("../Photos/search_16x16.png");
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  display: block;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #333333;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+
+/* Modal Content/Box pop up*/
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0; 
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
