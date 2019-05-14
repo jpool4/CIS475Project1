@@ -1,0 +1,514 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>shoutHaus - A new way to  listen</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- <style type="text/css">
+    .bs-example{
+        margin: 20px;
+    }
+</style> -->
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+</head>
+
+<body>
+  <div class="bs-example">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">
+            <img src="https://i.imgur.com/tMopLVL.png" height="35" alt="shoutHaus">
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link active">Home</a>
+                <a href="#" class="nav-item nav-link">Profile</a>
+                <a href="#" class="nav-item nav-link">Messages</a>
+                <a href="#" class="nav-item nav-link disabled" tabindex="-1">Upload</a>
+            </div>
+            <div class="navbar-nav ml-auto">
+                <a href="#" class="nav-item nav-link">Login</a>
+              <a href="#" class="nav-item nav-link">Signup</a>
+            </div>
+        </div>
+    </nav>
+</div>
+  
+  
+  
+  
+  
+    <!-- Main Container -->
+    <div class="wrapper">
+     <!-- <header class="main-head">shoutHaus</header> -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="popular.html">Popular</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="gaming.html">Gaming</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="tech.html">Tech</a></li>
+                <li><a href="cooking.html">Cooking</a></li>
+            </ul>
+        </nav> 
+        <article class="content">
+            <audio controls>
+<div> 
+  <button onclick="document.getElementById('player').play()">Play</button> 
+  <button onclick="document.getElementById('player').pause()">Pause</button> 
+  <button onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
+  <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
+</div>
+			<source src="Chicken.ogg" type="audio/ogg">
+			Unsupported Browser!
+			
+		  </audio>
+            <div id="contentCenter">
+
+                <div class="rowTitle">
+                    <h1>Popular</h1>
+                </div>
+                <div class="gallery">
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+                        <a href="#" onclick="play('Chicken.ogg')" class="tag"><h4>Chicken Cast</h4></a>
+                        <p class="tag">Test&nbsp;</p>
+                        <p class="text_column">Description</p>
+                    </div>
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+                        <h4>TITLE</h4>
+                        <p class="tag">Genre</p>
+                        <p class="text_column">Description</p>
+                    </div>
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+                        <h4>TITLE</h4>
+                        <p class="tag">Decription</p>
+                        <p class="text_column">Genre</p>
+                    </div>
+                </div>
+                <div class="rowTitle">
+                    <h1>Recent</h1>
+                </div>
+                <div class="gallery">
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+                        <a href="#" onclick="play('BluesInfusion.ogg')" class="tag"><h4>Sound 1</h4></a>
+                        <p class="tag">Gaming</p>
+                        <p class="text_column">Description</p>
+                    </div>
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+                        <h4>TITLE</h4>
+                        <p class="tag">Genre</p>
+                        <p class="text_column">Description</p>
+                    </div>
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+                        <h4>TITLE</h4>
+                        <p class="tag">Genre</p>
+                        <p class="text_column">Description</p>
+                    </div>
+                </div>
+                <div class="rowTitle">
+                    <h1>Trending</h1>
+                </div>
+                <div class="gallery">
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+                        <h4>Chicken Cast</h4>
+                        <p class="tag">Chicken Cast</p>
+                        <p class="text_column">Description</p>
+                    </div>
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+                        <h4>TITLE</h4>
+                        <p class="tag">Genre</p>
+                        <p class="text_column">Description</p>
+                    </div>
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+                        <h4>TITLE</h4>
+                        <p class="tag">Genre</p>
+                        <p class="text_column">Description</p>
+                    </div>
+                </div>
+                <!--<div class="contentRow">
+						
+						<div class="contentRowItem"><a href="#" onclick="play('Chicken.ogg')" class="firstRow">Chicken</a></div>
+						
+						<div class="contentRowItem"><a href="#" onclick="play('r1s2')" class="firstRow">Sound 2</a></div>
+						<div class="contentRowItem"><a href="#" onclick="play('r1s3')" class="firstRow">Sound 3</a></div>
+					</div>
+				
+					<div class="rowTitle"><h1>Recent</h1></div>
+					<div class="contentRow">
+						<div class="contentRowItem"><a href="#" onclick="play('r2s1')" class="firstRow">Sound 1</a></div>
+						<div class="contentRowItem"><a href="#" onclick="play('r2s2')" class="firstRow">Sound 2</a></div>
+						<div class="contentRowItem"><a href="#" onclick="play('r2s3')" class="firstRow">Sound 3</a></div>
+						
+					</div>
+					<div class="rowTitle"><h2>Trending</h2></div>
+					<div class="contentRow">
+						
+						<div class="contentRowItem"><a href="#" onclick="play('r3s1')" class="firstRow">Sound 1</a></div>
+						<div class="contentRowItem"><a href="#" onclick="play('r3s2')" class="firstRow">Sound 2</a></div>
+						<div class="contentRowItem"><a href="#" onclick="play('r3s3')" class="firstRow">Sound 3</a></div>
+					</div>
+					<div class="rowTitle"><h2>Trending</h2></div>
+					<div class="contentRow">
+						<div class="contentRowItem"><a href="#" onclick="play('r4s1')" class="firstRow">Sound 1</a></div>
+						<div class="contentRowItem"><a href="#" onclick="play('r4s2')" class="firstRow">Sound 2</a></div>
+						<div class="contentRowItem"><a href="#" onclick="play('r4s3')" class="firstRow">Sound 3</a></div>
+					</div> -->
+
+
+            </div>
+        </article>
+        <aside class="side">
+            <div class="sideDetail">
+				<div class="searchBar">
+				
+				<input type="text" onFocus="this.placeholder = ''" onblur="this.placeholder = 'Search...'" placeholder="Search..." id="search">
+				
+				</div>
+                <div class="login">
+				 <h2>Welcome Guest</h2>
+				</div>
+				
+				
+				<div class="addthis_tipjar_inline"></div>   
+                <div class="login">
+					
+                    <!-- Login Button-->
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+                    <!-- Signup button -->
+                    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Signup</button>
+                </div>
+				
+			</div>
+        </aside>
+        <div class="ad">
+            <div id="containerright">
+
+                <p>This is a test for the ad container</p>
+                <img src="marketingplan.jpg" width="205" height="146">
+                <br><br>
+                <img src="marketingplan.jpg" width="205" height="146">
+
+            </div>
+        </div>
+		
+		
+		
+	<!--	<footer class="main-footer">Copyright © 2019 ShoutHaus
+
+			
+
+		</footer> -->
+        </div>
+        <!-- Main Container Ends -->
+
+        <!-- Login Form -->
+        <div id="id01" class="modal" style="display:none">
+            <form name="loginform" class="modal-content animate" action="Login.php" onsubmit="return validate();" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="avatar.png" alt="avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="submit" onclick="document.getElementById('id01').style.display='none'" ; "Function()"; class="cancelbtn">Cancel</button>
+
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+        <!-- Hides Signup modal -->
+        <div id="id02" class="modal" style="display:none">
+            <!-- Signup form -->
+            <form name="signupform" class="modal-content animate" action="./Home (2).html" onsubmit="return validate2();" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="avatar.png" alt="avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="uname1"><b>Username</b></label>
+                    <input type="text" placeholder="Enter your desired username" name="uname1" required>
+
+                    <label for="psw1"><b>Password</b></label>
+                    <input type="password" placeholder="Enter a password" name="psw1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+
+                    <label for="psw2"><b>Confirm Password</b></label>
+                    <input type="password" placeholder="Confirm Password" name="psw2" required>
+                    <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+                    <p>By creating an account you agree to our <a href="privacy&terms.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                        <button type="" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+  
+  <!---------------------------------------- >
+<!-- Footer -->
+<footer class="page-footer font-small pt-4">
+<div style="background-color: #333;">
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">About Us</h5>
+        <p>shout.Haus is a brand new way to listen to your favorite podcasts.
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		</p>
+		
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Tony</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul> 
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <hr>
+
+  <!-- Call to action -->
+  <ul class="list-unstyled list-inline text-center py-2">
+    <li class="list-inline-item">
+      <h5 class="mb-1">Register now to listen to your favorite podcasts!</h5>
+    </li>
+    <li class="list-inline-item">
+      <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+    </li>
+  </ul>
+  <!-- Call to action -->
+
+  <hr>
+
+  <!-- Social buttons -->
+  <ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item">
+      <a class="btn-floating btn-fb mx-1">
+        <i class="fab fa-facebook-f"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-tw mx-1">
+        <i class="fab fa-twitter"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-gplus mx-1">
+        <i class="fab fa-google-plus-g"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-li mx-1">
+        <i class="fab fa-linkedin-in"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-dribbble mx-1">
+        <i class="fab fa-dribbble"> </i>
+      </a>
+    </li>
+  </ul>
+  <!-- Social buttons -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© Copyright 2019:
+    <a href="https://shout.haus"> shoutHaus</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+        <!-- checks username and password -->
+        <script>
+            function validate() {
+                var un = document.loginform.uname.value;
+                var pw = document.loginform.psw.value;
+				<!-- var un1 = document.signupform.uname1.value; -->
+				<!--var pw1 = document.signupform.psw1.value; -->
+				<!-- var pw2= document.signupform.psw2.value; -->
+                var username = "Towson";
+                var password = "Tigers2019";
+                if ((un == username) && (pw == password)) {
+                    return true;
+                } else {
+                    alert("Login unsuccessful. Please try again. If you forgot your password, click forgot password");
+                    return false;
+                }
+            }
+			
+			function validate2() {
+				var un1 = document.signupform.uname1.value;
+				var pw1 = document.signupform.psw1.value;
+				var pw2= document.signupform.psw2.value;
+				var username = "Towson";
+                var password = "Tigers2019";
+				
+				if ((un1 == username) && (pw1 == password) && (pw2 == password)) {
+                    return true;
+                } else {
+                    alert("Signup unsuccessful. This account already exists. Please try again.");
+                    return false;
+			}
+		}
+ 
+
+
+
+
+
+
+            // Get the modal
+            var modal = document.getElementById('id01');
+            var modal = document.getElementById('id02');
+
+            <!-- When the user clicks anywhere outside of the modal, close it -->
+            // window.onclick = function(event) { 
+              //  if (event.target == modal) {
+               //     modal.style.display = "none";
+              //  }
+          //   } 
+        </script>
+		
+			<!--Script at the end of page so that everything else loads first. -->
+		<script>
+		
+			function play(fileName) {
+				//alert(fileName);
+				var audio = document.getElementById('audioPlayer');
+				var songTitleDisplay = document.getElementById('songText');
+				//alert(typeof(audio))
+				audio.src = "" + fileName;
+				songTitleDisplay.innerHTML = fileName;
+				//alert(audio.src);
+				audio.load();
+				audio.play();
+				
+			}
+	  
+				
+		</script>
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cd09eba2c50f938"></script>
+</body>
+
+</html>
