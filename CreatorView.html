@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<input type="file">
+<audio controls></audio>
+<script>
+var input = document.querySelector("input[type=file]");
+var audio = document.querySelector("audio");
+input.onchange = function() {
+  audio.src = URL.createObjectURL(input.files[0]);
+}
+</script>
