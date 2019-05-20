@@ -560,4 +560,7 @@ span.psw {
 a {
   color: #FFF;
 }
+a:hover {
+   color: #fff
+}
 
