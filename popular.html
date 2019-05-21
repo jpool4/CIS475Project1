@@ -1,17 +1,96 @@
 <!doctype html>
-<html>
-
 <head>
-	<title>shoutHaus</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>shoutHaus - A new way to  listen</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/bootstrap-social.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style type="text/css">
+    .owl-item{
+        margin: 0px;
+    }
+    .owl-item .thumbnail{
+      width: 100% !important;
+    }
+    .wrapper .content{
+      max-width: 820px;
+    }
+    .gallery.owl-theme{
+      display: block;
+      position: relative;
+    }
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+      position: absolute;
+      background: transparent;
+    width: auto;
+    top: 40%;
+    font-size: 52px;
+    }
+    .owl-carousel .owl-nav button.owl-prev{
+      left: 0px;
+    }
+    .owl-carousel .owl-nav button.owl-next{
+      right: 0px;
+    }
+    .owl-carousel .owl-dots{
+       display: none;
+    }
+</style>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
 </head>
 
 <body>
+  <!-- Navbar -->
+	<!-- <header class="main-head">shoutHaus</header> -->
+	<div class ="main-head">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class ="navbar-brand"> 
+        <a class="navbar-brand " href="https://shout.haus">
+            <img src="https://i.imgur.com/tMopLVL.png"  height="35" alt="shoutHaus">
+        </a>
+        </div>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="inex.html" class="nav-item nav-link active">Home</a>
+                <a href="CreatorView.html" class="nav-item nav-link">Profile</a>
+                <a href="#" class="nav-item nav-link">Messages</a>   
+                <a href="CreatorView.html" class="nav-item nav-link">Upload</a>
+            </div>
+            <div class="navbar-nav ml-auto">
+            <!--    <a href="#" class="nav-item nav-link">Login</a>
+              <a href="#" class="nav-item nav-link">Signup</a> -->
+            </div>
+            
+            <form class="form-inline">
+                 <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            </form>
+  
+            
+        </div>
+    </nav>
+		</div>
+<!-- Navbar -->
+  
+  
+  
+  
+  
     <!-- Main Container -->
     <div class="wrapper">
-        <header class="main-head">shoutHaus</header>
+     <!-- <header class="main-head">shoutHaus</header> -->
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -23,73 +102,115 @@
                 <li><a href="tech.html">Tech</a></li>
                 <li><a href="cooking.html">Cooking</a></li>
             </ul>
-        </nav>
+        </nav> 
         <article class="content">
-            <audio controls>
+            
 <div> 
-  <button onclick="document.getElementById('player').play()">Play</button> 
+ <!-- <button onclick="document.getElementById('player').play()">Play</button> 
   <button onclick="document.getElementById('player').pause()">Pause</button> 
   <button onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
   <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
-</div>
-			<source src="Chicken.ogg" type="audio/ogg">
-			Unsupported Browser!
+</div> -->
+			<!-- audio player -->
+			<div id="player1">
+				
+				<a id="songText"></a>
+				<audio controls = "controls" id="audioPlayer">
+					<source src=""  type="audio/ogg">
+					Unsupported Browser!
+				</audio>
 			
-		  </audio>
+			
+			
+		  
             <div id="contentCenter">
 
                 <div class="rowTitle">
                     <h1>Popular</h1>
                 </div>
-                <div class="gallery">
-                    <div class="thumbnail"> <a href="#"><img src="bkg_06.jpg" alt="" width="2000" class="cards"/></a>
-                        <a href="#" onclick="play('Chicken.ogg')" class="tag"><h4>Chicken Cast</h4></a>
+                 <div class="gallery owl-carousel owl-theme" id="owl-first">
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+                        <a href="#" onclick="play('Chicken.ogg')" class="tag"><h4>Chicken</h4></a>
                         <p class="tag">Test&nbsp;</p>
                         <p class="text_column">Description</p>
                     </div>
-                    <div class="thumbnail"> <a href="#"><img src="bkg_06.jpg" alt="" width="2000" class="cards"/></a>
-                        <h4>TITLE</h4>
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+					<a href="#" onclick="play('Firefly.ogg')" class="tag"><h4>Firefly</h4></a>              
                         <p class="tag">Genre</p>
                         <p class="text_column">Description</p>
                     </div>
-                    <div class="thumbnail"> <a href="#"><img src="bkg_06.jpg" alt="" width="2000" class="cards"/></a>
-                        <h4>TITLE</h4>
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+                         <a href="#" onclick="play('FineLine.ogg')" class="tag"><h4>FineLine</h4></a>
+                        <p class="tag">Decription</p>
+                        <p class="text_column">Genre</p>
+                    </div>
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+                        <a href="#" onclick="play('Story.ogg')" class="tag"><h4>Story</h4></a>
+                        <p class="tag">Decription</p>
+                        <p class="text_column">Genre</p>
+                    </div>
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+                         <a href="#" onclick="play('NightTheme.ogg')" class="tag"><h4>NightTheme</h4></a>
                         <p class="tag">Decription</p>
                         <p class="text_column">Genre</p>
                     </div>
                 </div>
-                
-                <div class="gallery">
-                    <div class="thumbnail"> <a href="#"><img src="bkg_06.jpg" alt="" width="2000" class="cards"/></a>
-                        <a href="#" onclick="play('r3s1')" class="tag"><h4>Sound 1</h4></a>
+                <div class="rowTitle">
+                    <h1>Recent</h1>
+                </div>
+                <div class="gallery owl-carousel owl-theme" id="owl-second">
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+                        <a href="#" onclick="play('MemoryRain.ogg')" class="tag"><h4>MemoryRain</h4></a>
                         <p class="tag">Gaming</p>
                         <p class="text_column">Description</p>
                     </div>
-                    <div class="thumbnail"> <a href="#"><img src="bkg_06.jpg" alt="" width="2000" class="cards"/></a>
-                        <h4>TITLE</h4>
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+                         <a href="#" onclick="play('Guitar.ogg')" class="tag"><h4>Guitar</h4></a>
                         <p class="tag">Genre</p>
                         <p class="text_column">Description</p>
                     </div>
-                    <div class="thumbnail"> <a href="#"><img src="bkg_06.jpg" alt="" width="2000" class="cards"/></a>
-                        <h4>TITLE</h4>
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+                         <a href="#" onclick="play('GoldenLight.ogg')" class="tag"><h4>GoldenLight</h4></a>
+                        <p class="tag">Genre</p>
+                        <p class="text_column">Description</p>
+                    </div>
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+                         <a href="#" onclick="play('DreamingBlue.ogg')" class="tag"><h4>DreamingBlue</h4></a>
+                        <p class="tag">Genre</p>
+                        <p class="text_column">Description</p>
+                    </div>
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+                         <a href="#" onclick="play('PhillyCrew.ogg')" class="tag"><h4>PhillyCrew</h4></a>
                         <p class="tag">Genre</p>
                         <p class="text_column">Description</p>
                     </div>
                 </div>
-                
-                <div class="gallery">
-                    <div class="thumbnail"> <a href="#"><img src="/bkg_06.jpg" alt="" width="2000" class="cards"/></a>
-                        <h4>Chicken Cast</h4>
-                        <p class="tag">Chicken Cast</p>
-                        <p class="text_column">Description</p>
-                    </div>
-                    <div class="thumbnail"> <a href="#"><img src="bkg_06.jpg" alt="" width="2000" class="cards"/></a>
-                        <h4>TITLE</h4>
+                <div class="rowTitle">
+                    <h1>Trending</h1>
+                </div>
+                <div class="gallery owl-carousel owl-theme" id="owl-third">
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+                         <a href="#" onclick="play('PlentyStep.ogg')" class="tag"><h4>PlentyStep</h4></a>
                         <p class="tag">Genre</p>
                         <p class="text_column">Description</p>
                     </div>
-                    <div class="thumbnail"> <a href="#"><img src="bkg_06.jpg" alt="" width="2000" class="cards"/></a>
-                        <h4>TITLE</h4>
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+					 <a href="#" onclick="play('RaceCar.ogg')" class="tag"><h4>RaceCar</h4></a>
+                        <p class="tag">Genre</p>
+                        <p class="text_column">Description</p>
+                    </div>
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+                        <a href="#" onclick="play('YoureNotWrong.ogg')" class="tag"><h4>YoureNotWrong</h4></a>
+                        <p class="tag">Genre</p>
+                        <p class="text_column">Description</p>
+                    </div>
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+                         <a href="#" onclick="play('DaFunkyRapsta.ogg')" class="tag"><h4>DaFunkyRapsta</h4></a>
+                        <p class="tag">Genre</p>
+                        <p class="text_column">Description</p>
+                    </div>
+                    <div class="thumbnail"> <a href="#"><img src="ShoutHausLogo.png" alt="" width="2000" class="cards"/></a>
+                         <a href="#" onclick="play('Away.ogg')" class="tag"><h4>Away</h4></a>
                         <p class="tag">Genre</p>
                         <p class="text_column">Description</p>
                     </div>
@@ -128,20 +249,23 @@
         </article>
         <aside class="side">
             <div class="sideDetail">
-				<div class="searchBar">
 				
-				<input type="text" onFocus="this.placeholder = ''" onblur="this.placeholder = 'Search...'" placeholder="Search..." id="search">
-				
-				</div>
                 <div class="login">
-				 <h2>Welcome Guest</h2>
+				 <h2 id="welcomeTag">Welcome Guest</h2>
 				</div>
+				
+				<!--venmo button -->
+				<div class="addthis_tipjar_inline"></div>   
+				
+				<!-- Login -->
                 <div class="login">
 					
                     <!-- Login Button-->
-                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+                    <button type="button" class="btn btn-dark mr-1" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+					
+					
                     <!-- Signup button -->
-                    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Signup</button>
+                    <button type="button" class="btn btn-dark" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Signup</button>
                 </div>
 				
 			</div>
@@ -156,11 +280,14 @@
 
             </div>
         </div>
-        <footer class="main-footer">Copyright © 2019 ShoutHaus
+		
+		
+		
+	<!--	<footer class="main-footer">Copyright © 2019 ShoutHaus
 
 			
 
-		</footer>
+		</footer> -->
         </div>
         <!-- Main Container Ends -->
 
@@ -173,6 +300,11 @@
                 </div>
 
                 <div class="container">
+				
+				 <button class="btn btn-lg btn-twitter btn-block text-uppercase" type="submit"><i class="fab fa-twitter mr-2"></i> Sign in with Twitter</button>
+              <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>
+			  <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
+				
                     <label for="uname"><b>Username</b></label>
                     <input type="text" placeholder="Enter Username" name="uname" required>
 
@@ -188,34 +320,33 @@
                 <div class="container" style="background-color:#f1f1f1">
                     <button type="submit" onclick="document.getElementById('id01').style.display='none'" ; "Function()"; class="cancelbtn">Cancel</button>
 
-                    <span class="psw">Forgot <a href="#">password?</a></span>
+                    <span class="psw">Forgot <a href="#" style="color: blue" class="forgot">password?</a></span>
                 </div>
             </form>
         </div>
         <!-- Hides Signup modal -->
         <div id="id02" class="modal" style="display:none">
             <!-- Signup form -->
-            <form name="signupform" class="modal-content animate" action="./Home (2).html" method="post">
+            <form name="signupform" class="modal-content animate" action="index.html" onsubmit="return validate2();" method="post">
                 <div class="imgcontainer">
                     <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
                     <img src="avatar.png" alt="avatar" class="avatar">
                 </div>
 
                 <div class="container">
-                    <label for="username"><b>Username</b></label>
+                    <label for="uname1"><b>Username</b></label>
                     <input type="text" placeholder="Enter your desired username" name="uname1" required>
 
-                    <label for="password"><b>Password</b></label>
-                    <input type="password" placeholder="Enter a password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                    <label for="psw1"><b>Password</b></label>
+                    <input type="password" placeholder="Enter a password" name="psw1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
 
                     <label for="psw2"><b>Confirm Password</b></label>
-                    <input type="password" placeholder="Confirm Password" name="password-repeat" required>
-
+                    <input type="password" placeholder="Confirm Password" name="psw2" required>
                     <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
       </label>
 
-                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                    <p>By creating an account you agree to our <a href="privacy&terms.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
                     <div class="container" style="background-color:#f1f1f1">
                         <button type="submit" class="signupbtn">Sign Up</button>
                         <button type="" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
@@ -224,20 +355,265 @@
             </form>
         </div>
 
+  
+  <!---------------------------------------- >
+<!-- Footer -->
+<footer class="page-footer font-small pt-4">
+<div style="background-color: #333;">
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">About Us</h5>
+        <p>shout.Haus is a brand new way to listen to your favorite podcasts.
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		</p>
+		
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+		  <!-- privacy policy -->
+            <a href="privacy&terms.html">Privacy Policy</a>
+          </li>
+          <li>
+		  <!-- creators page -->
+            <a href="team.html">The Creators</a>
+          </li>
+          <li>
+		  <!-- venmo link -->
+            <a href="https://m.addthis.com/live/redirect/?url=https%3A%2F%2Fvenmo.com%2F%3Ftxn%3Dpay%26audience%3Dfriends%26recipients%3Dyourboytony&uid=5cd4658a47cd6ab0&pub=ra-5cd09eba2c50f938&rev=v8.4.4-wp&per=undefined&pco=tjin-1.0">Donate</a>
+          </li>
+          <li>
+            <a href="#!">Support</a>
+          </li>
+        </ul> 
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Categories</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="popular">Popular</a>
+          </li>
+          <li>
+            <a href="news">News</a>
+          </li>
+          <li>
+            <a href="music">Music</a>
+          </li>
+          <li>
+            <a href="gaming">Gaming</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Support</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Listening to a podcast</a>
+          </li>
+          <li>
+            <a href="#!">Uploading a podcast</a>
+          </li>
+          <li>
+            <a href="#!">Account issues</a>
+          </li>
+          <li>
+            <a href="#!">Trust policy</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <hr>
+
+  <!-- Call to action -->
+  <ul class="list-unstyled list-inline text-center py-2">
+    <li class="list-inline-item">
+      <h5 class="mb-1">Register now to listen to your favorite podcasts!</h5>
+    </li>
+    <li class="list-inline-item">
+      <a href="#"  class="btn btn-primary btn-rounded" role="button"  onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign up!</a>
+    </li>
+  </ul>
+  <!-- Call to action -->
+
+  <hr>
+
+  <!-- Social buttons -->
+  <ul class="list-unstyled list-inline text-center">
+    <a href="#"><i class="fa fa-facebook-f mr-3" style="font-size:24px"></i></a>
+	<a href="#"><i class="fab fa-youtube mr-3" style="font-size:24px"></i></a>
+	<a href="#"><i class="fab fa-instagram mr-3" style="font-size:24px"></i></a>
+	<a href="#"><i class="fab fa-linkedin-in mr-3" style="font-size:24px"></i></a>
+  </ul>
+  <!-- Social buttons -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© Copyright 2019:
+    <a href="https://shout.haus"> shoutHaus</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+<script type="text/javascript">
+<!-- function to scroll podcasts horizontally with arrows or touch -->
+
+   $(document).ready(function(){
+     $('#owl-first').owlCarousel( {
+          loop:true,
+          margin:10,
+          responsiveClass:true,
+
+          responsive:{
+              0:{
+                  items:3,
+                  nav:true
+              },
+              600:{
+                  items:3,
+                  nav:false
+              },
+              1000:{
+                  items:3,
+                  nav:true,
+                  loop:false
+              }
+          }    
+      });         
+   });
+    $(document).ready(function(){
+     $('#owl-second').owlCarousel( {
+          loop:true,
+          margin:10,
+          responsiveClass:true,
+
+          responsive:{
+              0:{
+                  items:3,
+                  nav:true
+              },
+              600:{
+                  items:3,
+                  nav:false
+              },
+              1000:{
+                  items:3,
+                  nav:true,
+                  loop:false
+              }
+          }    
+      });         
+   });
+     $(document).ready(function(){
+     $('#owl-third').owlCarousel( {
+          loop:true,
+          margin:10,
+          responsiveClass:true,
+
+          responsive:{
+              0:{
+                  items:3,
+                  nav:true
+              },
+              600:{
+                  items:3,
+                  nav:false
+              },
+              1000:{
+                  items:3,
+                  nav:true,
+                  loop:false
+              }
+          }    
+      });         
+   });
+</script>
         <!-- checks username and password -->
         <script>
             function validate() {
                 var un = document.loginform.uname.value;
                 var pw = document.loginform.psw.value;
+				<!-- var un1 = document.signupform.uname1.value; -->
+				<!--var pw1 = document.signupform.psw1.value; -->
+				<!-- var pw2= document.signupform.psw2.value; -->
                 var username = "Towson";
                 var password = "Tigers2019";
                 if ((un == username) && (pw == password)) {
                     return true;
+					document.getElementById("id02").style.display = "none";
                 } else {
-                    alert("Login unsuccessful. Please try again. If you forgot your password, click forgot password");
+                    alert("Login unsuccessful. Please try again. If you forgot your password, click forgot password.");
                     return false;
                 }
             }
+			
+			function validate2() {
+				var un1 = document.signupform.uname1.value;
+				var pw1 = document.signupform.psw1.value;
+				var pw2= document.signupform.psw2.value;
+				var username = "Towson";
+                var password = "Tigers2019";
+				
+				if ((un1 == username) && (pw1 == password) && (pw2 == password)) {
+					Document.getElementById('welcomeTag').textContent= "Welcome Tester"
+                    return true;
+                } else {
+                    alert("Signup unsuccessful. This account already exists. Please try again.");
+                    return false;
+			}
+		}
+ 
 
 
 
@@ -248,17 +624,17 @@
             var modal = document.getElementById('id01');
             var modal = document.getElementById('id02');
 
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
+            <!-- When the user clicks anywhere outside of the modal, close it -->
+            // window.onclick = function(event) { 
+              //  if (event.target == modal) {
+               //     modal.style.display = "none";
+              //  }
+          //   } 
         </script>
 		
 			<!--Script at the end of page so that everything else loads first. -->
 		<script>
-		
+		<!-- script to play podcast at top once clicked -->
 			function play(fileName) {
 				//alert(fileName);
 				var audio = document.getElementById('audioPlayer');
@@ -274,6 +650,7 @@
 	  
 				
 		</script>
+	<!-- script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cd09eba2c50f938"></script> -->
 </body>
 
 </html>
