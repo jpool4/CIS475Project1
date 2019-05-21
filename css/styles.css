@@ -26,10 +26,10 @@ nav ul {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #717070;
-    color: #FFFFFF;
     font-weight: lighter;
     letter-spacing: 2px;
+	max-width: 80%;
+	margin-left: 10%
 }
 
 .content {
@@ -532,8 +532,9 @@ span.psw {
     
 
 .page-footer
-{color:white
-  
+{color:white;
+  	max-width: 80%;
+	margin-left: 10%
 }
 
 .navbar-default {
@@ -550,4 +551,16 @@ span.psw {
 @keyframes animatezoom {
   from {transform: scale(0)} 
   to {transform: scale(1)}
+}
+
+
+
+
+
+/* Social Media Footer */
+a {
+  color: #FFF;
+}
+a:hover {
+   color: #007bff;
 }
